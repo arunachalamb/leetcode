@@ -27,8 +27,11 @@ This question is the same as 1009: https://leetcode.com/problems/complement-of-b
 """
 class Solution:
     def findComplement(self, num: int) -> int:
+        """
         n = 2**math.ceil(math.log2(num))
         if n == num:
             return num-1
         else:
             return (n-1)-num
+        """
+        return (2**(num.bit_length())-num-1)
