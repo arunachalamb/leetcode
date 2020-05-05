@@ -1,3 +1,5 @@
+import bisect
+
 # The isBadVersion API is already defined for you.
 # @param version, an integer
 # @return a bool
@@ -47,6 +49,8 @@ class Solution:
                     i0 = 1
                 print(i0, i1)
         return i1
+
+    def findBadVersion(self, n):
 
 if __name__ == '__main__':
     print(Solution().firstBadVersion(N))
